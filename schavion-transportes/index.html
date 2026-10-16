@@ -34,6 +34,7 @@
         <span class="brand-main">SCHIAVON</span><span class="brand-sub">MUDANÇAS & TRANSPORTES</span>
       </a>
       <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#orcamento">Montar orçamento</a>
         <a href="#servicos">Serviços</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#trabalhos">Trabalhos</a>
@@ -43,13 +44,71 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="inicio">
+  <main id="inicio">
+    <section class="moving-builder" id="orcamento" aria-labelledby="quote-title">
+      <div class="container">
+        <div class="builder-heading">
+          <span class="section-kicker">Schiavon · Araraquara e região</span>
+          <h1 id="quote-title">Vamos organizar sua mudança?</h1>
+          <p>Conte o que precisa e envie seu pedido pronto pelo WhatsApp. A equipe confirma o valor e a disponibilidade.</p>
+        </div>
+        <div class="builder-layout">
+          <form id="movingForm" class="moving-form">
+            <fieldset class="form-card">
+              <legend>1. Sua mudança</legend>
+              <div class="field-grid">
+                <label class="quote-field">Precisa de ajudantes?
+                  <select name="helpers"><option value="">Selecione</option><option>Com ajudantes</option><option>Sem ajudantes</option><option>Preciso de orientação</option></select>
+                </label>
+                <label class="quote-field">Data da mudança<input name="movingDate" type="date" /></label>
+              </div>
+            </fieldset>
+            <fieldset class="form-card">
+              <legend>2. Local de saída</legend>
+              <div class="field-grid">
+                <label class="quote-field field-wide">Endereço de saída<textarea name="originAddress" rows="2" maxlength="500" placeholder="Rua, número, bairro, cidade e complemento"></textarea></label>
+                <label class="quote-field">Tipo de imóvel<select name="originType"><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Edícula</option><option>Sobrado</option></select></label>
+                <label class="quote-field">Andar<input name="originFloor" type="text" maxlength="60" placeholder="Ex.: térreo ou 3º andar" /></label>
+                <label class="quote-field field-wide">Acesso para retirar os móveis<select name="originAccess"><option value="">Selecione</option><option>Térreo, sem escadas</option><option>Elevador</option><option>Apenas escada</option><option>Elevador e escada</option><option>A confirmar</option></select></label>
+              </div>
+            </fieldset>
+            <fieldset class="form-card">
+              <legend>3. Local de destino</legend>
+              <div class="field-grid">
+                <label class="quote-field field-wide">Endereço de destino<textarea name="destinationAddress" rows="2" maxlength="500" placeholder="Rua, número, bairro, cidade e complemento"></textarea></label>
+                <label class="quote-field">Tipo de imóvel<select name="destinationType"><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Edícula</option><option>Sobrado</option></select></label>
+                <label class="quote-field">Andar<input name="destinationFloor" type="text" maxlength="60" placeholder="Ex.: térreo ou 3º andar" /></label>
+                <label class="quote-field field-wide">Acesso para entregar os móveis<select name="destinationAccess"><option value="">Selecione</option><option>Térreo, sem escadas</option><option>Elevador</option><option>Apenas escada</option><option>Elevador e escada</option><option>A confirmar</option></select></label>
+              </div>
+            </fieldset>
+            <fieldset class="form-card">
+              <legend>4. O que vamos transportar?</legend>
+              <div class="field-grid">
+                <label class="quote-field field-wide">Há móveis ou objetos pesados?<select name="heavyItems"><option value="">Selecione</option><option value="Sim">Sim</option><option value="Não">Não</option><option>Não sei avaliar</option></select></label>
+                <label class="quote-field field-wide" id="heavyDetailsField" hidden>Quais itens precisam de atenção?<textarea name="heavyDetails" rows="2" maxlength="1000" placeholder="Ex.: vaso grande, mesa de pedra, cofre..."></textarea></label>
+                <label class="quote-field field-wide">Lista de móveis e eletrodomésticos<textarea name="furniture" rows="4" maxlength="3000" placeholder="Ex.: 1 sofá, 2 camas, 1 geladeira, 1 guarda-roupa..."></textarea></label>
+                <label class="quote-field">Quantidade aproximada de caixas<input name="boxes" type="number" min="0" max="9999" step="1" placeholder="Ex.: 15" /></label>
+                <label class="quote-field">Quantidade aproximada de sacos<input name="bags" type="number" min="0" max="9999" step="1" placeholder="Ex.: 5" /></label>
+              </div>
+            </fieldset>
+          </form>
+          <aside class="moving-summary" aria-labelledby="summary-title">
+            <span class="section-kicker">Seu pré-atendimento</span>
+            <h2 id="summary-title">Resumo da mudança</h2>
+            <div id="movingSummary" aria-live="polite" aria-atomic="true"></div>
+            <p class="quote-note">Ainda não sabe algum detalhe? Ele vai como “a informar”. O envio inicia uma conversa, sem confirmar a contratação.</p>
+            <button class="btn btn-whatsapp" type="submit" form="movingForm">Enviar pedido no WhatsApp</button>
+            <button class="clear-quote" type="reset" form="movingForm">Limpar informações</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
       <div class="hero-bg" role="img" aria-label="Caminhões da Schiavon em serviço de mudança"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <div class="eyebrow"><span></span> Araraquara e região</div>
-        <h1>Seu transporte<br><strong>sem complicação.</strong></h1>
+        <h2 class="hero-title">Seu transporte<br><strong>sem complicação.</strong></h2>
         <p>Carretos, mudanças residenciais e comerciais, móveis e eletrodomésticos com atendimento direto pelo WhatsApp.</p>
         <div class="hero-actions">
           <a class="btn btn-primary js-wa" href="#" data-msg="Olá! Quero um orçamento. A retirada será em: ____ e a entrega em: ____. Preciso transportar: ____. Data aproximada: ____.">Pedir orçamento no WhatsApp</a>
@@ -57,7 +116,7 @@
         </div>
         <div class="trust-row">
           <div><strong>Atendimento local</strong><span>Araraquara e cidades próximas</span></div>
-          <div><strong>Orçamento direto</strong><span>Sem formulário demorado</span></div>
+          <div><strong>Orçamento direto</strong><span>Seu pedido organizado no WhatsApp</span></div>
           <div><strong>Serviço real</strong><span>Fotos de trabalhos realizados</span></div>
         </div>
       </div>
@@ -163,6 +222,6 @@
   <footer><div class="container footer-grid"><div class="brand footer-brand"><span class="brand-main">SCHIAVON</span><span class="brand-sub">MUDANÇAS & TRANSPORTES</span></div><p>Carretos e mudanças em Araraquara e região.</p><p>© <span id="year"></span> Schiavon.</p></div></footer>
 
   <a class="floating-wa js-wa" href="#" aria-label="Falar no WhatsApp" data-msg="Olá! Quero solicitar um orçamento de carreto ou mudança."><span>WhatsApp</span><b>↗</b></a>
-  <script src="script.js"></script>
+  <script src="script.js?v=pre-atendimento-1"></script>
 </body>
 </html>
