@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Schiavon Mudanças e Transportes | Carretos em Araraquara e Região</title>
+  <meta name="description" content="Carretos, mudanças residenciais e comerciais, transporte de móveis e eletrodomésticos em Araraquara e região. Peça seu orçamento pelo WhatsApp." />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" href="assets/favicon.svg" />
+  <meta property="og:title" content="Schiavon Mudanças e Transportes" />
+  <meta property="og:description" content="Carretos e mudanças em Araraquara e região. Orçamento rápido pelo WhatsApp." />
+  <meta property="og:image" content="assets/hero.webp" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MovingCompany",
+    "name":"Schiavon Mudanças e Transportes",
+    "telephone":"+55 16 99766-7944",
+    "areaServed":["Araraquara - SP","Matão - SP","Bueno de Andrada - SP"],
+    "description":"Serviços de carreto, mudanças residenciais e comerciais e transporte de móveis e eletrodomésticos em Araraquara e região.",
+    "sameAs":["https://www.google.com/search?q=Schiavon+Mudan%C3%A7a+e+Transportes+no+Geral"]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Schiavon Mudanças e Transportes">
+        <span class="brand-main">SCHIAVON</span><span class="brand-sub">MUDANÇAS & TRANSPORTES</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#orcamento">Montar orçamento</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#regiao">Região</a>
+      </nav>
+      <a class="btn btn-small btn-whatsapp js-wa" href="#" data-msg="Olá! Quero solicitar um orçamento de carreto ou mudança.">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="moving-builder" id="orcamento" aria-labelledby="quote-title">
+      <div class="container">
+        <div class="builder-heading">
+          <span class="section-kicker">Schiavon · Araraquara e região</span>
+          <h1 id="quote-title">Vamos organizar sua mudança?</h1>
+          <p>Conte o que precisa e envie seu pedido pronto pelo WhatsApp. A equipe confirma o valor e a disponibilidade.</p>
+        </div>
+        <div class="builder-layout">
+          <form id="movingForm" class="moving-form">
+            <fieldset class="form-card">
+              <legend>1. Sua mudança</legend>
+              <div class="field-grid">
+                <label class="quote-field">Precisa de ajudantes?
+                  <select name="helpers"><option value="">Selecione</option><option>Com ajudantes</option><option>Sem ajudantes</option><option>Preciso de orientação</option></select>
+                </label>
+                <label class="quote-field">Data da mudança<input name="movingDate" type="date" /></label>
+              </div>
+            </fieldset>
+            <fieldset class="form-card">
+              <legend>2. Local de saída</legend>
+              <div class="field-grid">
+                <label class="quote-field field-wide">Endereço de saída<textarea name="originAddress" rows="2" maxlength="500" placeholder="Rua, número, bairro, cidade e complemento"></textarea></label>
+                <label class="quote-field">Tipo de imóvel<select name="originType"><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Edícula</option><option>Sobrado</option></select></label>
+                <label class="quote-field">Andar<input name="originFloor" type="text" maxlength="60" placeholder="Ex.: térreo ou 3º andar" /></label>
+                <label class="quote-field field-wide">Acesso para retirar os móveis<select name="originAccess"><option value="">Selecione</option><option>Térreo, sem escadas</option><option>Elevador</option><option>Apenas escada</option><option>Elevador e escada</option><option>A confirmar</option></select></label>
+              </div>
+            </fieldset>
+            <fieldset class="form-card">
+              <legend>3. Local de destino</legend>
+              <div class="field-grid">
+                <label class="quote-field field-wide">Endereço de destino<textarea name="destinationAddress" rows="2" maxlength="500" placeholder="Rua, número, bairro, cidade e complemento"></textarea></label>
+                <label class="quote-field">Tipo de imóvel<select name="destinationType"><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Edícula</option><option>Sobrado</option></select></label>
+                <label class="quote-field">Andar<input name="destinationFloor" type="text" maxlength="60" placeholder="Ex.: térreo ou 3º andar" /></label>
+                <label class="quote-field field-wide">Acesso para entregar os móveis<select name="destinationAccess"><option value="">Selecione</option><option>Térreo, sem escadas</option><option>Elevador</option><option>Apenas escada</option><option>Elevador e escada</option><option>A confirmar</option></select></label>
+              </div>
+            </fieldset>
+            <fieldset class="form-card">
+              <legend>4. O que vamos transportar?</legend>
+              <div class="field-grid">
+                <label class="quote-field field-wide">Há móveis ou objetos pesados?<select name="heavyItems"><option value="">Selecione</option><option value="Sim">Sim</option><option value="Não">Não</option><option>Não sei avaliar</option></select></label>
+                <label class="quote-field field-wide" id="heavyDetailsField" hidden>Quais itens precisam de atenção?<textarea name="heavyDetails" rows="2" maxlength="1000" placeholder="Ex.: vaso grande, mesa de pedra, cofre..."></textarea></label>
+                <label class="quote-field field-wide">Lista de móveis e eletrodomésticos<textarea name="furniture" rows="4" maxlength="3000" placeholder="Ex.: 1 sofá, 2 camas, 1 geladeira, 1 guarda-roupa..."></textarea></label>
+                <label class="quote-field">Quantidade aproximada de caixas<input name="boxes" type="number" min="0" max="9999" step="1" placeholder="Ex.: 15" /></label>
+                <label class="quote-field">Quantidade aproximada de sacos<input name="bags" type="number" min="0" max="9999" step="1" placeholder="Ex.: 5" /></label>
+              </div>
+            </fieldset>
+          </form>
+          <aside class="moving-summary" aria-labelledby="summary-title">
+            <span class="section-kicker">Seu pré-atendimento</span>
+            <h2 id="summary-title">Resumo da mudança</h2>
+            <div id="movingSummary" aria-live="polite" aria-atomic="true"></div>
+            <p class="quote-note">Ainda não sabe algum detalhe? Ele vai como “a informar”. O envio inicia uma conversa, sem confirmar a contratação.</p>
+            <button class="btn btn-whatsapp" type="submit" form="movingForm">Enviar pedido no WhatsApp</button>
+            <button class="clear-quote" type="reset" form="movingForm">Limpar informações</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Caminhões da Schiavon em serviço de mudança"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span></span> Araraquara e região</div>
+        <h2 class="hero-title">Seu transporte<br><strong>sem complicação.</strong></h2>
+        <p>Carretos, mudanças residenciais e comerciais, móveis e eletrodomésticos com atendimento direto pelo WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary js-wa" href="#" data-msg="Olá! Quero um orçamento. A retirada será em: ____ e a entrega em: ____. Preciso transportar: ____. Data aproximada: ____.">Pedir orçamento no WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+5516997667944">Ligar agora</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>Atendimento local</strong><span>Araraquara e cidades próximas</span></div>
+          <div><strong>Orçamento direto</strong><span>Seu pedido organizado no WhatsApp</span></div>
+          <div><strong>Serviço real</strong><span>Fotos de trabalhos realizados</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-quote" aria-label="Orçamento rápido">
+      <div class="container quote-grid">
+        <div>
+          <span class="section-kicker">Orçamento rápido</span>
+          <h2>Conte o que precisa transportar.</h2>
+        </div>
+        <div class="quote-steps">
+          <span>1. Local de retirada</span><span>2. Local de entrega</span><span>3. Itens e data</span>
+        </div>
+        <a class="btn btn-dark js-wa" href="#" data-msg="Olá! Quero um orçamento. Retirada: ____. Entrega: ____. Itens: ____. Data: ____.">Enviar dados pelo WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">O que fazemos</span><h2>Transporte para o que você precisa.</h2></div>
+          <p>Atendimento para pequenas retiradas, carretos e mudanças completas. Consulte disponibilidade para rotas fora da região.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><div class="icon">⌂</div><h3>Mudança residencial</h3><p>Casas, apartamentos e condomínios, com veículo adequado ao volume da mudança.</p></article>
+          <article class="service-card"><div class="icon">▦</div><h3>Mudança comercial</h3><p>Transporte de móveis, equipamentos e itens de empresas e escritórios.</p></article>
+          <article class="service-card"><div class="icon">▣</div><h3>Carretos</h3><p>Retirada e entrega de móveis, eletrodomésticos e compras de maior volume.</p></article>
+          <article class="service-card"><div class="icon">↗</div><h3>Fretes e transportes</h3><p>Serviços locais e intermunicipais sob consulta, saindo de Araraquara.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="como-funciona">
+      <div class="container split-grid">
+        <div class="photo-card"><img src="assets/apartamento.webp" alt="Equipe e caminhão da Schiavon em mudança em condomínio" loading="lazy"></div>
+        <div class="split-copy">
+          <span class="section-kicker">Simples do início ao fim</span>
+          <h2>Você fala com quem resolve.</h2>
+          <div class="timeline">
+            <div><b>01</b><span><strong>Envie as informações</strong><small>Retirada, entrega, itens e data aproximada.</small></span></div>
+            <div><b>02</b><span><strong>Receba o orçamento</strong><small>O valor é calculado conforme distância, volume e serviço.</small></span></div>
+            <div><b>03</b><span><strong>Agende o transporte</strong><small>Combinamos o melhor dia e horário para o atendimento.</small></span></div>
+          </div>
+          <a class="text-link js-wa" href="#" data-msg="Olá! Quero verificar disponibilidade para uma mudança/carreto.">Verificar disponibilidade →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="trabalhos">
+      <div class="container">
+        <div class="section-head light">
+          <div><span class="section-kicker">Trabalhos realizados</span><h2>Serviço de verdade, sem foto de banco.</h2></div>
+          <p>Alguns registros reais de carretos e mudanças feitos pela Schiavon.</p>
+        </div>
+        <div class="gallery">
+          <figure class="g1"><img src="assets/carga-cadeiras.webp" alt="Caminhão carregado com móveis" loading="lazy"></figure>
+          <figure class="g2"><img src="assets/equipe.webp" alt="Equipe durante serviço de mudança" loading="lazy"></figure>
+          <figure class="g3"><img src="assets/eletrodomesticos.webp" alt="Transporte de eletrodomésticos" loading="lazy"></figure>
+          <figure class="g4"><img src="assets/centro.webp" alt="Caminhão Schiavon em serviço no centro" loading="lazy"></figure>
+          <figure class="g5"><img src="assets/caminhao-azul.webp" alt="Caminhão para fretes e mudanças" loading="lazy"></figure>
+          <figure class="g6"><img src="assets/mudanca-local.webp" alt="Mudança residencial com caminhão Schiavon" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section region-section" id="regiao">
+      <div class="container region-grid">
+        <div>
+          <span class="section-kicker">Área de atendimento</span>
+          <h2>Base em Araraquara.</h2>
+          <p>Atendimento prioritário em Araraquara e região, incluindo Matão e Bueno de Andrada. Para outros destinos, consulte a rota pelo WhatsApp.</p>
+          <div class="chips"><span>Araraquara</span><span>Matão</span><span>Bueno de Andrada</span><span>Outras rotas sob consulta</span></div>
+        </div>
+        <div class="region-photo"><img src="assets/geladeira.webp" alt="Caminhão Schiavon em transporte residencial" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div><span class="section-kicker">Dúvidas rápidas</span><h2>Antes de chamar.</h2></div>
+        <div class="faq-list">
+          <details><summary>Quanto custa um carreto ou mudança?</summary><p>O orçamento depende da distância, quantidade de itens, acessos do local e do tipo de serviço. Envie os detalhes pelo WhatsApp para receber uma cotação.</p></details>
+          <details><summary>Vocês transportam apenas mudanças completas?</summary><p>Não. Também atendemos carretos e transporte de móveis, eletrodomésticos e outros itens de maior volume.</p></details>
+          <details><summary>Atendem fora de Araraquara?</summary><p>Sim, conforme rota e disponibilidade. Araraquara e região são a área principal; outros destinos podem ser consultados diretamente.</p></details>
+          <details><summary>Como agilizar meu orçamento?</summary><p>Informe cidade/bairro de retirada e entrega, quais itens serão transportados e a data aproximada.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-grid">
+        <div><span class="section-kicker">Schiavon Mudanças e Transportes</span><h2>Vai mudar ou precisa levar algo?</h2><p>Fale agora pelo WhatsApp e envie os dados do transporte.</p></div>
+        <div class="cta-contact">
+          <a class="phone" href="tel:+5516997667944">(16) 99766-7944</a>
+          <a class="btn btn-primary js-wa" href="#" data-msg="Olá! Quero solicitar um orçamento de carreto ou mudança.">Chamar no WhatsApp</a>
+          <a class="google-link" href="https://www.google.com/search?q=Schiavon+Mudan%C3%A7a+e+Transportes+no+Geral" target="_blank" rel="noopener">Ver perfil no Google ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-grid"><div class="brand footer-brand"><span class="brand-main">SCHIAVON</span><span class="brand-sub">MUDANÇAS & TRANSPORTES</span></div><p>Carretos e mudanças em Araraquara e região.</p><p>© <span id="year"></span> Schiavon.</p></div></footer>
+
+  <a class="floating-wa js-wa" href="#" aria-label="Falar no WhatsApp" data-msg="Olá! Quero solicitar um orçamento de carreto ou mudança."><span>WhatsApp</span><b>↗</b></a>
+  <script src="script.js?v=pre-atendimento-1"></script>
+</body>
+</html>
